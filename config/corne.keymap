@@ -9,6 +9,15 @@
 #include <dt-bindings/zmk/pointing.h>
 
 / {
+    combos {
+        compatible = "zmk,combos";
+
+        jk_esc {
+            bindings = <&kp ESCAPE>;
+            key-positions = <19 20>;
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 

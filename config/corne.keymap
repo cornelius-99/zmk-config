@@ -29,6 +29,14 @@
             flavor = "tap-preferred";
             quick-tap-ms = <150>;
         };
+
+        e_tap_hold_repeat: e_tap_hold_repeat {
+            compatible = "zmk,behavior-tap-dance";
+            label = "E_TAP_HOLD_REPEAT";
+            #binding-cells = <0>;
+            tapping-term-ms = <250>;
+            bindings = <&mod_tap_200 LEFT_CONTROL E>, <&kp E>;
+        };
     };
 
     keymap {
@@ -42,10 +50,10 @@
             //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
 
             bindings = <
-&none  &kp Q                 &kp W  &mod_tap_200 LEFT_CONTROL E  &mod_tap_200 LEFT_ALT R              &kp T                            &kp Y    &mod_tap_200 LEFT_ALT U  &mod_tap_200 LCTRL I  &kp O    &kp P                          &none
-&none  &kp A                 &kp S  &lt 2 D                      &lt 1 F                              &kp G                            &kp H    &lt 1 J                  &lt 2 K               &kp L    &kp SEMI                       &none
-&none  &mod_tap_200 LSHFT Z  &kp X  &kp C                        &kp V                                &kp B                            &kp N    &kp M                    &kp COMMA             &kp DOT  &mod_tap_200 RIGHT_SHIFT FSLH  &none
-                                    &kp LEFT_ALT                 &mod_tap_200 LEFT_CONTROL BACKSPACE  &mod_tap_200 LEFT_SHIFT SPACE    &kp RET  &kp TAB                  &kp LEFT_WIN
+&none  &kp Q                 &kp W  &e_tap_hold_repeat  &mod_tap_200 LEFT_ALT R              &kp T                            &kp Y    &mod_tap_200 LEFT_ALT U  &mod_tap_200 LCTRL I  &kp O    &kp P                          &none
+&none  &kp A                 &kp S  &lt 2 D             &lt 1 F                              &kp G                            &kp H    &lt 1 J                  &lt 2 K               &kp L    &kp SEMI                       &none
+&none  &mod_tap_200 LSHFT Z  &kp X  &kp C               &kp V                                &kp B                            &kp N    &kp M                    &kp COMMA             &kp DOT  &mod_tap_200 RIGHT_SHIFT FSLH  &none
+                                    &kp LEFT_ALT        &mod_tap_200 LEFT_CONTROL BACKSPACE  &mod_tap_200 LEFT_SHIFT SPACE    &kp RET  &kp TAB                  &kp LEFT_WIN
             >;
         };
 

@@ -28,6 +28,7 @@
             tapping-term-ms = <250>;
             flavor = "tap-preferred";
             quick-tap-ms = <150>;
+            hold-trigger-on-release;
         };
 
         e_tap_hold_repeat: e_tap_hold_repeat {

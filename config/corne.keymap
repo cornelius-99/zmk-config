@@ -8,9 +8,17 @@
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/pointing.h>
 
-&lt { require-prior-idle-ms = <150>; };
+&lt {
+    require-prior-idle-ms = <200>;
+    quick-tap-ms = <200>;
+    tapping-term-ms = <200>;
+};
 
-&mt { require-prior-idle-ms = <150>; };
+&mt {
+    require-prior-idle-ms = <200>;
+    quick-tap-ms = <200>;
+    tapping-term-ms = <200>;
+};
 
 / {
     combos {

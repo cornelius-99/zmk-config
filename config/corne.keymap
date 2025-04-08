@@ -9,14 +9,14 @@
 #include <dt-bindings/zmk/pointing.h>
 
 &lt {
-    require-prior-idle-ms = <300>;
+    require-prior-idle-ms = <100>;
     quick-tap-ms = <200>;
     tapping-term-ms = <300>;
     flavor = "balanced";
 };
 
 &mt {
-    require-prior-idle-ms = <300>;
+    require-prior-idle-ms = <100>;
     quick-tap-ms = <200>;
     tapping-term-ms = <300>;
     flavor = "balanced";

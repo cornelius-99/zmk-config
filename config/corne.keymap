@@ -42,6 +42,7 @@
             tapping-term-ms = <200>;
             hold-trigger-key-positions = <6 18 30 31 19 7 8 32 33 21 9 20 34 22 10 39 40 41>;
             quick-tap-ms = <200>;
+            require-prior-idle-ms = <150>;
         };
 
         mt_right: mt_right {
@@ -53,6 +54,7 @@
             tapping-term-ms = <200>;
             hold-trigger-key-positions = <1 2 3 4 5 17 16 15 14 13 25 26 27 28 29 38 37 36>;
             quick-tap-ms = <200>;
+            require-prior-idle-ms = <150>;
         };
     };
 
